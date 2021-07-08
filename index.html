@@ -59,8 +59,14 @@
       height: 100%;
 
       display: grid;
-      grid-template-rows: min(150px, 18%) 1fr;
+      grid-template-rows: 50px 1fr;
       gap: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      .container {
+        grid-template-rows: 150px 1fr;
+      }
     }
 
     .sr-only {
@@ -76,35 +82,18 @@
     }
 
     .header {
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-
-      background-image: url('./images/topo-mob.jpg');
-      background-position: center, bottom;
+      background-image: url('./images/top-mob.jpg');
+      background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
     }
 
-    @media screen and (min-width: 350px) {
+    @media screen and (min-width: 768px) {
       .header {
-        background-image: url('./images/topo-custom-mob.png');
-        background-position: center, right;
-        background-size: contain;
-      }
-    }
-
-    @media screen and (min-width: 888px) {
-      .header {
-        background-image: url('./images/topo.png');
+        background-image: url('./images/top-full.jpg');
+        background-position: center;
         background-size: cover;
       }
-    }
-
-    .header__cover {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
     }
 
     .main {
@@ -132,10 +121,6 @@
       <h1 class="header__title sr-only">
         Power Couple Brasil 5 - Oferecimento Riachuelo
       </h1>
-  
-      <!-- <img src="./images/topo.min.png" alt="Logo: Power Couple Brasil 5 - Oferecimento Riachuelo"
-        title="Power Couple Brasil 5 - Oferecimento Riachuelo" width="1440" height="150" loading="lazy"
-        class="header__cover"> -->
     </header>
   
     <main class="main">
