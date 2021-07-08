@@ -59,7 +59,7 @@
       height: 100%;
 
       display: grid;
-      grid-template-rows: 150px 1fr;
+      grid-template-rows: min(150px, 18%) 1fr;
       gap: 0;
     }
 
@@ -80,15 +80,15 @@
       align-items: flex-end;
       justify-content: center;
 
-      background-image: url('./topo-mob.jpg');
+      background-image: url('./images/topo-mob.jpg');
       background-position: center, bottom;
       background-repeat: no-repeat;
       background-size: cover;
     }
 
-    @media screen and (min-width: 478px) {
+    @media screen and (min-width: 400px) {
       .header {
-        background-image: url('./topo-custom-mob.png');
+        background-image: url('./images/topo-custom-mob.png');
         background-position: center, right;
         background-size: contain;
       }
@@ -96,7 +96,7 @@
 
     @media screen and (min-width: 888px) {
       .header {
-        background-image: url('./topo.png');
+        background-image: url('./images/topo.png');
         background-size: cover;
       }
     }
@@ -133,7 +133,7 @@
         Power Couple Brasil 5 - Oferecimento Riachuelo
       </h1>
   
-      <!-- <img src="./topo.min.png" alt="Logo: Power Couple Brasil 5 - Oferecimento Riachuelo"
+      <!-- <img src="./images/topo.min.png" alt="Logo: Power Couple Brasil 5 - Oferecimento Riachuelo"
         title="Power Couple Brasil 5 - Oferecimento Riachuelo" width="1440" height="150" loading="lazy"
         class="header__cover"> -->
     </header>
