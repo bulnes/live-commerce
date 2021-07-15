@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-
 <head>
   <!-- Google Tag Manager -->
   <script>
@@ -130,7 +129,6 @@
     }
   </style>
 </head>
-
 <body>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4WN2MJ" height="0" width="0"
@@ -145,11 +143,22 @@
     </header>
 
     <main class="main">
-      <iframe src="https://live-co.app/go/714212432540" frameBorder="0" scrolling="no" loading="lazy"
-        class="main__content"></iframe>
+      <iframe id="live" frameBorder="0" scrolling="no" loading="lazy" class="main__content"></iframe>
     </main>
   </div>
 
-</body>
+  <script>
+    var cbCommerce = function(data) {
+      var liveId = data.itens[0].LIVE_ID;
+      var src_id = liveId || "714212432540";
+      var source = "https://live-co.app/go/" + src_id;
 
+      var iframe = document.getElementById("live");
+      iframe.src = source;
+    };
+  </script>
+
+  <script src="https://snippets.r7.com/snippet/60f0a51cbbb3eb7f21000026?callback=cbCommerce"></script>
+
+</body>
 </html>
